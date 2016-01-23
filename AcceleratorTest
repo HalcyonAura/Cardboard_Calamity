@@ -39,7 +39,7 @@ public class _MainActivity extends CardboardActivity implements CardboardView.St
 		}
 		public void onAccuracyChanged(Sensor sensor, int accuracy) {
             if (mAccel > 2) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Device has shaken.", Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(getApplicationContext(), "x: " + x + "y: " + y + "z: " + z, Toast.LENGTH_LONG);
                 toast.show();
             }
 		}
